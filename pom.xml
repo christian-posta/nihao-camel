@@ -40,6 +40,13 @@
 		<fabric8.dockerUser>fabric8/</fabric8.dockerUser>
 		<docker.image>${fabric8.dockerUser}${project.artifactId}:${project.version}</docker.image>
 		<camel.version>2.17.0</camel.version>
+
+		<fabric8.service.name>${project.artifactId}</fabric8.service.name>
+		<fabric8.service.port>8080</fabric8.service.port>
+		<fabric8.service.containerPort>8080</fabric8.service.containerPort>
+		<fabric8.service.type>LoadBalancer</fabric8.service.type>
+		<fabric8.label.group>msa</fabric8.label.group>
+		<fabric8.iconRef>camel</fabric8.iconRef>
 	</properties>
 
 	<dependencies>
